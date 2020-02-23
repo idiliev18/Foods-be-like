@@ -13,9 +13,12 @@ include("dbConnect.php");
    
     <form action="process.php" method="post" name="user">
         Name: <input type="text" name="name" value=""><br>
-        Email  <input type="email" name="email" value =""><br>
-        Message <textarea name="message"></textarea>
+        Email:  <input type="email" name="email" value =""><br>
+        Recipe Name: <textarea name="rname"></textarea>
+        Ingradients: <textarea name="Ingradients"></textarea>
+        How to make: <textarea name="HowToMake"></textarea>
         <input type="submit" value="Submit">
     </form>
+    <a href="index.html">Riba</a>
 </body>
 </html>
