@@ -19,6 +19,6 @@ include("dbConnect.php");
         How to make: <textarea name="HowToMake" required></textarea><br>
         <input type="submit" value="Submit">
     </form>
-    <a href="index.html">Riba</a>
+    <a href="/index.html">Riba</a>
 </body>
 </html>
