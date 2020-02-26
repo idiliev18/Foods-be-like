@@ -1,3 +1,4 @@
+<!-- Don't touch-->
 <?php
 include("dbConnect.php");
 $name=$_REQUEST['name'];
@@ -10,3 +11,5 @@ $query=mysqli_query($db_connect,"INSERT INTO recipe (name, email, rname, Ingradi
 
 mysqli_close($db_connect);
 header("location:recipe.php?note=success");
+?>
+<!-- Don't touch-->

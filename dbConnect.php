@@ -1,3 +1,4 @@
+<!-- Don't touch-->
 <?php
 $db_host = "localhost";
 $db_username = "root";
@@ -12,3 +13,4 @@ if(mysqli_connect_error())
 
 
 ?>
+<!-- Don't touch-->

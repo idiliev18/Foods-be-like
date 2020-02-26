@@ -1,3 +1,4 @@
+<!-- Don't touch-->
 <?php
 
 include("dbConnect.php");
@@ -22,3 +23,4 @@ include("dbConnect.php");
     <a href="index.html">Riba</a>
 </body>
 </html>
+<!-- Don't touch-->
