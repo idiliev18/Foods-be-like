@@ -22,7 +22,8 @@ body {
    
   .wrap {
     display: inline-block;
-    margin-top: 40px;
+    width: 100%;
+
   }
   
   /* a little "umph" */
@@ -45,8 +46,6 @@ body {
   
   ul {
     list-style: none;
-    position: relative;
-    text-align: left;
   }
   
   li {
