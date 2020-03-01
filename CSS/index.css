@@ -1,215 +1,204 @@
     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background-image: url('pictures/z.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    font-family: helvetica, arial, serif;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-   
-  .wrap {
-    display: inline-block;
-    width: 100%;
-
-  }
-  
-  /* a little "umph" */
-  .decor {
-    background: #6EAF8D;
-    background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: linear-gradient(left, white 50%, #6EAF8D 50%);
-    background-size: 50px 25%;;
-    padding: 2px;
-    display: block;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-  }
-  
-  ul {
-    list-style: none;
-
-  }
-  
-  li {
-    float: left;
-  }
-  
-  /* clear'n floats */
-  ul:after {
-    clear: both;
-  }
-  
-  ul:before,
-  ul:after {
-      content: " ";
-      display: table;
-  }
-  
-  nav {
-    position: relative;
-    background-image: -webkit-linear-gradient(bottom,rgb(231, 229, 87) 7%, #6c3 100%);
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  
-  /* prime */
-  ul.primary li a {
-    display: block;
-    padding: 20px 30px;
-  }
-  
-  ul.primary li:last-child a {
-    border-right: none;
-  }
-  
-  ul.primary li a:hover {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
-    color: #000;
-  }
-  
-  
-  /* keeps the tab background white */
-  ul.primary li:hover a {
-    background: #fff;
-    color: #666;
-    text-shadow: none;
-  }
-  
-  ul.primary li:hover > a{
-    color: #000;
-  } 
-
-
-html {
-    height:100%;
-  }
-  
-  body {
-    margin:0;
-  }
-  
-  .bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-  }
-  
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:4s;
-  }
-  
-  .bg3 {
-    animation-duration:5s;
-  }
-  
-  h1 {
-    font-family:monospace;
-  }
-  
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
+    html,
+    body {
+        width: 100%;
+        height: 100%;
     }
-    100% {
-      transform:translateX(25%);
+    
+    body {
+        background-image: url('pictures/z.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: helvetica, arial, serif;
+        font-size: 13px;
+        text-transform: uppercase;
     }
-  }
-
-
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #fbff00;
-    color: rgb(0, 0, 0);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  
-  .container {
-    border-radius: 5px;
-    padding: 70px;
-  }
-
-  .container1 {
-    border-radius: 5px;
-    padding: 215px;
-  }
-
-
-  @import "compass/css3";
-
-  @import "compass/css3/transform";
-  @import url(https://fonts.googleapis.com/css?family=Bangers);
-  
-  
-  
-  h1 {
-    text-align: center;
-    font-weight: normal;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 80px;
-    white-space: nowrap;
-    font-size: 80px;
-    z-index: 1000;
-    font-family: 'Bangers', cursive;
-    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
-  }
-  
-  @media screen and (max-width: 50em) {
+    
+    .wrap {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .decor {
+        background: #6EAF8D;
+        background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: linear-gradient(left, white 50%, #6EAF8D 50%);
+        background-size: 50px 25%;
+        ;
+        padding: 2px;
+        display: block;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        float: left;
+    }
+    /* clear'n floats */
+    
+    ul:after {
+        clear: both;
+    }
+    
+    ul:before,
+    ul:after {
+        content: " ";
+        display: table;
+    }
+    
+    nav {
+        position: relative;
+        background-image: -webkit-linear-gradient(bottom, rgb(231, 229, 87) 7%, #6c3 100%);
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    /* prime */
+    
+    ul.primary li a {
+        display: block;
+        padding: 20px 30px;
+    }
+    
+    ul.primary li:last-child a {
+        border-right: none;
+    }
+    
+    ul.primary li a:hover {
+        color: #000;
+    }
+    /* keeps the tab background white */
+    
+    ul.primary li:hover a {
+        background: #fff;
+        color: #666;
+        text-shadow: none;
+    }
+    
+    ul.primary li:hover>a {
+        color: #000;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+    
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+    
+    .bg3 {
+        animation-duration: 5s;
+    }
+    
     h1 {
-      font-size: 20vw;
-     }
-  }
-
-
- 
+        font-family: monospace;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(25%);
+        }
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: #fbff00;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .container {
+        border-radius: 5px;
+        padding: 70px;
+    }
+    
+    .container1 {
+        border-radius: 5px;
+        padding: 215px;
+    }
+    
+    @import "compass/css3";
+    @import "compass/css3/transform";
+    @import url(https://fonts.googleapis.com/css?family=Bangers);
+    h1 {
+        text-align: center;
+        font-weight: normal;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 80px;
+        white-space: nowrap;
+        font-size: 80px;
+        z-index: 1000;
+        font-family: 'Bangers', cursive;
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+    }
+    
+    @media screen and (max-width: 50em) {
+        h1 {
+            font-size: 20vw;
+        }
+    }

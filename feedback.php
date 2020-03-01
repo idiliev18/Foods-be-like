@@ -1,3 +1,10 @@
+<?php
+
+include("dbConnect.php");
+?>
+
+
+
 <!Doctype html>
 <html>
 
@@ -37,15 +44,15 @@
     <div class="bg bg3"></div>
 
     <div class="container">
-        <form action="">
+        <form action="feedbackpro.php" method="POST" >
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="fname" placeholder="Your name..">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lname" placeholder="Your last name..">
       
           <label for="fname">Your E-mail</label>
-          <input type="email" id="E-mail" name="E-mail" placeholder="Your E-mail..">
+          <input type="email" id="E-mail" name="email" placeholder="Your E-mail..">
 
           <label for="country">Country</label>
           <select id="country" name="country">
