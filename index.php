@@ -19,7 +19,7 @@
                 </li>
 
                 <li>
-                    <a href="recipe.php">Import a recipe</a>
+                    <a href="recipe.php">Send a recipe</a>
                 </li>
 
                 <li>
@@ -47,7 +47,7 @@
 <!-- Search-->
 <div class="container1">
 
-        <input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" >
+        <input type="text" name="search_text" id="search_text" style="height: 70px"placeholder="What you have in your fridge?" class="form-control" >
 		<div id="result"></div>
 		<div style="clear:both"></div>
 </div>

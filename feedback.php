@@ -56,9 +56,28 @@ include("dbConnect.php");
 
           <label for="country">Country</label>
           <select id="country" name="country">
-            <option value="Bulgaria">Bulgaria</option>
-            <option value="UK ">UK</option>
-            <option value="USA">USA</option>
+            <option value="0">Bulgaria</option>
+            <option value="1 ">The UK</option>
+            <option value="2">The USA</option>
+            <option value="3">Germany</option>
+            <option value="4">Turkey</option>
+            <option value="5">Serbia</option>
+            <option value="6">Greece</option>
+            <option value="7">France</option>
+            <option value="8">Romania</option>
+            <option value="9">The Netherlands</option>
+            <option value="10">Croatia</option>
+            <option value="11">Egypt</option>
+            <option value="12">China</option>
+            <option value="13">Japan</option>
+            <option value="14">Australia</option>
+            <option value="15">Austria</option>
+            <option value="16">Russia</option>
+            <option value="17">India</option>
+            <option value="18">Brazil</option>
+            <option value="19">South Corea</option>
+            <option value="20">Canada</option>
+
           </select>
       
           <label for="subject">Subject</label>
