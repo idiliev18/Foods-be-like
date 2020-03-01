@@ -11,8 +11,11 @@ body {
 }
 
 body {
-    background: #252525;
-}
+    background-image: url('pictures/b.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
 
 .topnav {
     overflow: hidden;
