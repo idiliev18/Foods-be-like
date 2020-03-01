@@ -162,13 +162,15 @@ html {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
-    background-color: #fbff00;
-  }
   
   .container {
     border-radius: 5px;
     padding: 70px;
+  }
+
+  .container1 {
+    border-radius: 5px;
+    padding: 215px;
   }
 
 
