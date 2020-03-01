@@ -11,7 +11,7 @@
     }
     
     body {
-        background-image: url('pictures/z.jpg');
+        background-image: url("Images/z.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -179,6 +179,7 @@
     .container1 {
         border-radius: 5px;
         padding: 215px;
+        height: 70px
     }
     
     @import "compass/css3";
@@ -201,4 +202,14 @@
         h1 {
             font-size: 20vw;
         }
+    }
+    
+    .table-responsive table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .table-responsive table td {
+        border: 1px solid black;
     }

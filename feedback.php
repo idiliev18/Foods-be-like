@@ -10,7 +10,7 @@ include("dbConnect.php");
 
 <head>
 
-    <link rel="stylesheet" href="CSS\index.css ">
+    <link rel="stylesheet" href="CSS & Images/index.css ">
 </head>
 
 <body>
@@ -20,15 +20,15 @@ include("dbConnect.php");
         <nav>
             <ul class="primary">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
 
                 <li>
-                    <a href="import a recipe.html">Import a recipe</a>
+                    <a href="recipe.php">Import a recipe</a>
                 </li>
 
                 <li>
-                    <a href="give us feedback.html">Give us feedback</a>
+                    <a href="feedback.php">Give us feedback</a>
                 </li>
 
                 <li style="float:right">

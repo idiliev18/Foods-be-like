@@ -9,7 +9,7 @@ include("dbConnect.php");
 
 <head>
 
-    <link rel="stylesheet" href="CSS\index.css ">
+    <link rel="stylesheet" href="CSS & Images/index.css ">
 </head>
 
 <body>
@@ -19,15 +19,15 @@ include("dbConnect.php");
         <nav>
           <ul class="primary">
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.php">Home</a>
             </li>
             
             <li>
-              <a href="import a recipe.html">Import a recipe</a>
+              <a href="recipe.php">Import a recipe</a>
             </li>
             
             <li>
-              <a href="give us feedback.html">Give us feedback</a> 
+              <a href="feedback.php">Give us feedback</a> 
             </li>
             
             <li style="float:right">
@@ -51,7 +51,7 @@ include("dbConnect.php");
             <label for="fname">Your E-mail</label>
             <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail">
 
-            <label for="fname">Name of the recepe</label>
+            <label for="fname">Name of the recipe</label>
             <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe">
         
             <label for="lname">Products</label>
