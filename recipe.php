@@ -31,7 +31,7 @@ include("dbConnect.php");
             </li>
             
             <li style="float:right">
-              <a href="about.html">About Us</a>
+              <a href="about.html">Mission</a>
             </li>
             
           </ul>

@@ -27,7 +27,7 @@
                 </li>
 
                 <li style="float: right;">
-                    <a href="about.html">About</a>
+                    <a href="about.html">Mission</a>
                 </li>
 
                 <li>
