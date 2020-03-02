@@ -10,6 +10,8 @@ $HowToMake=$_REQUEST['HowToMake'];
 $query=mysqli_query($db_connect,"INSERT INTO recipe (name, email, rname, Ingradients, HowToMake) VALUES ('$name','$email','$rname', '$Ingradients', '$HowToMake')") or die(mysqli_error($db_connect));
 
 mysqli_close($db_connect);
-header("location:recipe.php?note=success");
+//header("location:recipe.php?note=success");
 ?>
-<!-- Don't touch-->
+<script>
+	window.location.href = "recipe.php?note=success";
+</script>
