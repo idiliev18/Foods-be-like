@@ -9,7 +9,7 @@ include("dbConnect.php");
 
 <head>
 
-    <link rel="stylesheet" href="CSS & Images/index.css ">
+    <link rel="stylesheet" href="CSS and Images/index.css ">
 </head>
 
 <body>
