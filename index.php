@@ -52,39 +52,9 @@
 		<div style="clear:both"></div>
 </div>
 <!-- Search-->
-<script>
-$(document).ready(function(){
-	//load_data();
+<script src="search.js"></script>
+<footer>
 
-	function clearTable(){
-		$("#result").empty();
-	}
-
-	function load_data(query)
-	{
-		$.ajax({
-			url:"fetch.php",
-			method:"post",
-			data:{query:query},
-			success:function(data)
-			{
-				$('#result').html(data);
-			}
-		});
-	}
-	
-	$('#search_text').keyup(function(){
-		var search = $(this).val();
-		if(search != '')
-		{
-			load_data(search);
-		}
-		else
-		{
-			//load_data();		
-			clearTable();
-		}
-	});
-});
-</script>
+&copy 2020 Foods be like
+</footer>
 </html>
