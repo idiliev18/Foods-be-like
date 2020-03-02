@@ -1,4 +1,3 @@
-<!-- Don't touch-->
 <?php
 include("dbConnect.php");
 $fname=$_REQUEST['fname'];
@@ -11,6 +10,8 @@ $subject=$_REQUEST['subject'];
 $query=mysqli_query($db_connect,"INSERT INTO feedback (fname, lname,email, country, subject) VALUES ('$fname','$lname', '$email','$country', '$subject')") or die(mysqli_error($db_connect));
 
 mysqli_close($db_connect);
-header("location:feedback.php?note=success");
+//header("location:feedback.php?note=success");
 ?>
-<!-- Don't touch-->
+<script>
+	window.location.href = "feedback.php?note=success";
+</script>
