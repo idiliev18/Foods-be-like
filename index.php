@@ -45,7 +45,7 @@
 <!-- Search-->
 <div class="container1">
 
-        <input type="text" name="search_text" id="search_text" style="height: 70px"placeholder="What you have in your fridge?" class="form-control" >
+        <input type="text" name="search_text" id="search_text" style="height: 70px"placeholder="What do you have in your fridge?" class="form-control" >
 		<div id="result"></div>
 		<div style="clear:both"></div>
 </div>

@@ -24,7 +24,7 @@ include("dbConnect.php");
             </li>
             
             <li>
-              <a href="recipe.php">Import a recipe</a>
+              <a href="recipe.php">Send a recipe</a>
             </li>
             
             <li>
@@ -47,19 +47,19 @@ include("dbConnect.php");
         <div class="container">
           <form action="process.php"method="POST">
             <label for="fname">Your Name</label>
-            <input type="text" id="Your Name" name="name" placeholder="Your Name">
+            <input type="text" id="Your Name" name="name" placeholder="Your Name" required>
 
             <label for="fname">Your E-mail</label>
-            <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail">
+            <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail" required>
 
             <label for="fname">Name of the recipe</label>
-            <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe">
+            <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe" required>
         
             <label for="lname">Products</label>
-            <input type="text" id="Products" name="Ingradients" placeholder="Products..">
+            <input type="text" id="Products" name="Ingradients" placeholder="Products.." required>
         
             <label for="subject">How to prepare it</label>
-            <textarea id="subject" name="HowToMake" placeholder="How to prepare it.." style="height:200px"></textarea>
+            <textarea id="subject" name="HowToMake" placeholder="How to prepare it.." style="height:200px" required></textarea>
         
             <input type="submit" value="Submit">
           </form>

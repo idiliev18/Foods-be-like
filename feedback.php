@@ -25,7 +25,7 @@ include("dbConnect.php");
                 </li>
 
                 <li>
-                    <a href="recipe.php">Import a recipe</a>
+                    <a href="recipe.php">Send a recipe</a>
                 </li>
 
                 <li>
@@ -47,13 +47,13 @@ include("dbConnect.php");
     <div class="container">
         <form action="feedbackpro.php" method="POST" >
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Your name..">
+          <input type="text" id="fname" name="fname" placeholder="Your name.." required>
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lname" placeholder="Your last name.." required>
       
           <label for="fname">Your E-mail</label>
-          <input type="email" id="E-mail" name="email" placeholder="Your E-mail..">
+          <input type="email" id="E-mail" name="email" placeholder="Your E-mail.." required>
 
           <label for="country">Country</label>
           <select id="country" name="country">
@@ -82,7 +82,7 @@ include("dbConnect.php");
           </select>
       
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
       
           <input type="submit" value="Submit">
         </form>
