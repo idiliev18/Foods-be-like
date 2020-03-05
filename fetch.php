@@ -24,7 +24,7 @@ if(mysqli_num_rows($result) > 0)
 					<table class="table table bordered">
 						<tr>
 							<th>Name</th>
-							<th>Ingradients</th>
+							<th>Ingredients</th>
 							<th>How to make</th>
 							<th>Time to make</th>
 							<th>Uploaded by</th>
