@@ -8,9 +8,12 @@ include("dbConnect.php");
 <html>
 
 <head>
-
-    <link rel="stylesheet" href="CSS and Images/index.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS and Images/index.css">
     <link rel="icon" href="CSS and Images/Images/icon.png">
+    <script src="JavaScript/translation.js"></script>
+    <script src="JavaScript/site.js"></script>
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -20,19 +23,19 @@ include("dbConnect.php");
         <nav>
           <ul class="primary">
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html" data-lang="nav-home">Home</a>
             </li>
             
             <li>
-              <a href="recipe.html">Send a recipe</a>
+              <a href="recipe.html" data-lang="nav-recipe">Send a recipe</a>
             </li>
             
             <li>
-              <a href="feedback.html">Give us feedback</a> 
+              <a href="feedback.html" data-lang="nav-feedback">Give us feedback</a> 
             </li>
             
             <li style="float:right">
-              <a href="about.html">Mission</a>
+              <a href="about.html" data-lang="nav-mission">Mission</a>
             </li>
             
           </ul>
@@ -46,19 +49,19 @@ include("dbConnect.php");
 
         <div class="container">
           <form action="process.php"method="POST">
-            <label for="fname">Your Name</label>
+            <label for="fname" data-lang="recipe-yname">Your Name</label>
             <input type="text" id="Your Name" name="name" placeholder="Your Name" required>
 
-            <label for="fname">Your E-mail</label>
+            <label for="fname" data-lang="recipe-email" >Your E-mail</label>
             <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail" required>
 
-            <label for="fname">Name of the recipe</label>
+            <label for="fname" data-lang="recipe-rname">Name of the recipe</label>
             <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe" required>
         
-            <label for="lname">Products</label>
+            <label for="lname" data-lang="recipe-products">Products</label>
             <input type="text" id="Products" name="Ingradients" placeholder="Products.." required>
         
-            <label for="subject">How to prepare it</label>
+            <label for="subject" data-lang="recipe-prepare">How to prepare it</label>
             <textarea id="subject" name="HowToMake" placeholder="How to prepare it.." style="height:200px" required></textarea>
         
             <input type="submit" value="Submit">

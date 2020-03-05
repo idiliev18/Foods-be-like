@@ -26,7 +26,7 @@
         display: inline-block;
         width: 100%;
     }
-    
+    /*
     .decor {
         background: #6EAF8D;
         background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
@@ -38,7 +38,7 @@
         padding: 2px;
         display: block;
     }
-    
+    */
     a {
         text-decoration: none;
         color: #fff;
@@ -105,7 +105,7 @@
     body {
         margin: 0;
     }
-    
+  /*
     .bg {
         animation: slide 3s ease-in-out infinite alternate;
         background-image: linear-gradient(-60deg, rgb(22, 121, 160) 50%, rgb(16, 164, 233) 50%);
@@ -117,7 +117,7 @@
         top: 0;
         z-index: -1;
     }
-    
+    */
     .bg2 {
         animation-direction: alternate-reverse;
         animation-duration: 4s;
