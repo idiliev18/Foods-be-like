@@ -105,7 +105,7 @@
     body {
         margin: 0;
     }
-  /*
+  
     .bg {
         animation: slide 3s ease-in-out infinite alternate;
         background-image: linear-gradient(-60deg, rgb(22, 121, 160) 50%, rgb(16, 164, 233) 50%);
@@ -117,7 +117,7 @@
         top: 0;
         z-index: -1;
     }
-    */
+   
     .bg2 {
         animation-direction: alternate-reverse;
         animation-duration: 4s;
@@ -240,7 +240,21 @@
     {
     background-color: #f2f2f2
     }
-    
- 
 
+
+   .translate-button.translate-en
+    {
+            background-image: url(Images/uk.svg); 
+            width: 40px;
+            height: 40px;
+           margin-left:93%;
+    }
+ 
+    .translate-button.translate-bg
+    {
+            background-image: url(Images/bulgaria.svg); 
+            width: 40px;
+            height: 40px;
+            
+    }
    
