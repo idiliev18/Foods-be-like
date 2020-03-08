@@ -225,10 +225,10 @@ var textTranslation={
         
 
 
-        "template":{
-            'en': ``,
+        "feedback-submit":{
+            'en': `Submit`,
 
-            'bg': ``
+            'bg': `Изпратете`
         },
 
         "template":{
