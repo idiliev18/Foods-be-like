@@ -23,19 +23,19 @@ include("dbConnect.php");
         <nav>
           <ul class="primary">
             <li>
-              <a href="index.html" data-lang="nav-home">Home</a>
+              <a href="index.html" data-lang="nav-home"></a>
             </li>
             
             <li>
-              <a href="recipe.html" data-lang="nav-recipe">Send a recipe</a>
+              <a href="recipe.html" data-lang="nav-recipe"></a>
             </li>
             
             <li>
-              <a href="feedback.html" data-lang="nav-feedback">Give us feedback</a> 
+              <a href="feedback.html" data-lang="nav-feedback"> </a> 
             </li>
             
             <li style="float:right">
-              <a href="about.html" data-lang="nav-mission">Mission</a>
+              <a href="about.html" data-lang="nav-mission"></a>
             </li>
       
           </ul>
@@ -49,28 +49,7 @@ include("dbConnect.php");
     <div class="bg bg3"></div>
   -->
 
-      <div data-lang="send_recipe">
-        <div class="container">
-          <form action="process.php"method="POST">
-            <label for="fname" data-lang="recipe-yname">Your Name</label>
-            <input type="text" id="Your Name" name="name" placeholder="Your Name" required>
-
-            <label for="fname" data-lang="recipe-email" >Your E-mail</label>
-            <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail" required>
-
-            <label for="fname" data-lang="recipe-rname">Name of the recipe</label>
-            <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe" required>
-        
-            <label for="lname" data-lang="recipe-products">Products</label>
-            <input type="text" id="Products" name="Ingradients" placeholder="Products.." required>
-        
-            <label for="subject" data-lang="recipe-prepare">How to prepare it</label>
-            <textarea id="subject" name="HowToMake" placeholder="How to prepare it.." style="height:200px" required></textarea>
-        
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
+      <div data-lang="send_recipe"></div>
       
 </body>
 
