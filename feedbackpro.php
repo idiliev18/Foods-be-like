@@ -13,5 +13,5 @@ mysqli_close($db_connect);
 //header("location:feedback.php?note=success");
 ?>
 <script>
-	window.location.href = "feedback.php?note=success";
+	window.location.href = "feedback.html?note=success";
 </script>

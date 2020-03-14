@@ -1,7 +1,6 @@
 var textTranslation={
 
 
-  
         "nav-home":{
             'en': `Home`,
 
