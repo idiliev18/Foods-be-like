@@ -226,9 +226,9 @@ var textTranslation={
 
 
         "feedback-submit":{
-            'en': `Submit`,
+            'en': ` <input type="submit" data-lang="feedback-submit" value="Submit">`,
 
-            'bg': `Изпратете`
+            'bg': ` <input type="submit" data-lang="feedback-submit" value="Изпратете">`
         },
 
         "template":{
