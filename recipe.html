@@ -43,11 +43,13 @@ include("dbConnect.php");
         </div>
     <button class="translate-button translate-bg" data-lng="bg"></button> 
     <button class="translate-button translate-en" data-lng="en"></button>
-    <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
 
+    <!-- <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+  -->
 
+      <div data-lang="send_recipe">
         <div class="container">
           <form action="process.php"method="POST">
             <label for="fname" data-lang="recipe-yname">Your Name</label>
@@ -68,7 +70,8 @@ include("dbConnect.php");
             <input type="submit" value="Submit">
           </form>
         </div>
-
+      </div>
+      
 </body>
 
 </html>

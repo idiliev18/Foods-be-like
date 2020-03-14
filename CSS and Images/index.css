@@ -26,7 +26,7 @@
         display: inline-block;
         width: 100%;
     }
-    /*
+    
     .decor {
         background: #6EAF8D;
         background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
@@ -38,7 +38,7 @@
         padding: 2px;
         display: block;
     }
-    */
+    
     a {
         text-decoration: none;
         color: #fff;
@@ -83,16 +83,16 @@
         border-right: none;
     }
     
-    /*ul.primary li a:hover {
+    ul.primary li a:hover {
         color: #000;
     }
-    /* keeps the tab background white 
+     keeps the tab background white 
     
     ul.primary li:hover a {
         background: #fff;
         color: #666;
         text-shadow: none;
-    }*/
+    }
     
     ul.primary li:hover>a {
         color: #000;
