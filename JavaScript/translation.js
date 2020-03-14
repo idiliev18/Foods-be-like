@@ -73,6 +73,7 @@ var textTranslation={
         
                   <label for="country" data-lang="feedback-country">Country</label>
                   <select id="country" name="country">
+                    <option value="0"  data-lang="country-0" >Choose Country</option>
                     <option value="0"  data-lang="country-0" >Bulgaria</option>
                     <option value="1"  data-lang="country-1">The UK</option>
                     <option value="2"  data-lang="country-2">The USA</option>
@@ -121,6 +122,7 @@ var textTranslation={
         
                   <label for="country" data-lang="feedback-country">Държава</label>
                   <select id="country" name="country">
+                    <option value="1000"  data-lang="country-0" >Изберете държава</option>
                     <option value="0"  data-lang="country-0" >България</option>
                     <option value="1"  data-lang="country-1">Великобритания</option>
                     <option value="2"  data-lang="country-2">САЩ</option>
