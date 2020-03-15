@@ -14,3 +14,7 @@ mysqli_close($db_connect);
 
 
 ?>
+
+<script>
+	window.location.href = "Upload.html?note=success";
+</script>
