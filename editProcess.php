@@ -4,19 +4,17 @@
 
     if(isset($_POST['update']))
     {
-        $UserID = $_GET['id'];
-        $RecipeName = $_POST['Name'];
-        $Products = $_POST['Ingradients'];
-        $htm = $_POST['HowToMake'];
-        $gosho = $_POST['TimeToMake'];
-        $uploadedBy = $_POST['UploadedBy'];
+        $UserID = $_GET['ID'];
+        $UserName = $_POST['name'];
+        $UserEmail = $_POST['email'];
+        $UserAge = $_POST['age'];
 
-            $query = " update sbi set Name = '".$RecipeName."', Igradients='".$Products."',HowToMake='".$htm."',TimeToMake='".$gosho."',UploadedBy='".$uploadedBy."' where User_ID='".$UserID."'";
+        $query = " update records set User_Name = '".$UserName."', User_Email='".$UserEmail."',User_Age='".$UserAge."' where User_ID='".$UserID."'";
         $result = mysqli_query($db_connect,$query);
 
         if($result)
         {
-            header("location:sbi_Edit.php");
+            header("location:sbi_edit.php");
         }
         else
         {
@@ -25,7 +23,7 @@
     }
     else
     {
-        header("location:sbi_Edit.php");
+        header("location:sbi_edit.php");
     }
 
 

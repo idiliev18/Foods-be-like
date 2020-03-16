@@ -16,5 +16,5 @@ mysqli_close($db_connect);
 ?>
 
 <script>
-	window.location.href = "Upload.html?note=success";
+	window.location.href = "sbi_Upload.php?note=success";
 </script>

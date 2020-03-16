@@ -1,20 +1,18 @@
 <?php 
-
+ 
     require_once("dbConnect.php");
-    $UserID = $_GET['User_ID'];
-    $query = " select * from sbi where id='".$UserID."'";
+    $UserID = $_GET['GetID'];
+    $query = " select * from records where User_ID='".$UserID."'";
     $result = mysqli_query($db_connect,$query);
-
+ 
     while($row=mysqli_fetch_assoc($result))
     {
-        $ID = $row['id'];
-        $RecipeName = $row['Name'];
-        $Products = $row['Ingradients'];
-        $htm = $row['HowToMake'];
-        $ttm = $row['TimeToMake'];
-        $uploadedBy = $row['UploadedBy'];
+        $UserID = $row['User_ID'];
+        $UserName = $row['User_Name'];
+        $UserEmail = $row['User_Email'];
+        $UserAge = $row['User_Age'];
     }
-
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +24,7 @@
     <title>Document</title>
 </head>
 <body class="bg-dark">
-
+ 
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 m-auto">
@@ -35,26 +33,14 @@
                             <h3 class="bg-success text-white text-center py-3"> Update Form in PHP</h3>
                         </div>
                         <div class="card-body">
-
-                        <form action="editProcess.php" method="POST">
-                            <label for="fname">Recipe name</label>
-                            <input type="text" id="Your Name" name="Name" required value="<?php echo $RecipeName ?>">
-
-                            <label for="fname">Products</label>
-                            <input type="text" id="Your E-mail" name="Ingradients" required value="<?php echo $Products ?>">
-
-                            <label for="fname">How To Make</label>
-                            <input type="text" id="Name of the recepe" name="HowToMake" required value="<?php echo $htm ?>">
-
-                            <label for="lname">Time To Make</label>
-                            <input type="text" id="Products" name="TimeToMake" required value="<?php echo $ttm ?>">
-
-                            <label for="subject">Uploaded By</label>
-                            <input type="text" id="subject" name="UploadedBy" required value="<?php echo $uploadedBy ?>">
-
-                            <input type="submit" value="Update" name="update">
-                        </form>
-
+ 
+                            <form action="editProcess.php?ID=<?php echo $UserID ?>" method="post">
+                                <input type="text" class="form-control mb-2" placeholder=" User Name " name="name" value="<?php echo $UserName ?>">
+                                <input type="email" class="form-control mb-2" placeholder=" User Email " name="email" value="<?php echo $UserEmail ?>">
+                                <input type="text" class="form-control mb-2" placeholder=" User Age " name="age" value="<?php echo $UserAge ?>">
+                                <button class="btn btn-primary" name="update">Update</button>
+                            </form>
+ 
                         </div>
                     </div>
                 </div>
