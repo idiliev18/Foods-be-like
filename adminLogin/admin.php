@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Admin</title>
-</head>
-<body>
-  <h1>Hi!</h1>  
-</body>
-</html>
+<?php
+session_start();
+
+if(isset($_SESSION['User']))
+{
+    echo "Hello ". $_SESSION['User']. '</br>';
+    echo '<a href="logout.php?logout">Logout</a>';
+}
+else
+{
+    header("location:login.php");
+}
+
+
+
+?>

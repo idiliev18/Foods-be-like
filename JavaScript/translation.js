@@ -205,22 +205,6 @@ var textTranslation={
           </div> `
         },
 
-        "Search_field":{
-            'en': `<div  data-lang="Search_field">
-
-            <input type="text" name="search_text" id="search_text" style="height: 70px"  placeholder="What do you have in your fridge?" class="form-control" >
-            <div id="result"></div>
-            <div style="clear:both"></div>
-            </div> `,
-
-            'bg': `<div  data-lang="Search_field">
-
-            <input type="text" name="search_text" id="search_text" style="height: 70px"  placeholder="Какво има във вашия хладилник?" class="form-control" >
-            <div id="result"></div>
-            <div style="clear:both"></div>
-            </div> `
-        },
-
         "mission-text":{
             'en': ` <b>Our mission is to make<br>cooking<br> easier and funnier!</b`,
 

@@ -1,5 +1,6 @@
 <?php
 
+session_start();    
 include("AdbConnect.php");
 
 if(isset($_POST['btn-login']))
@@ -18,8 +19,9 @@ if(isset($_POST['btn-login']))
         //echo "$query";
       if($row=mysqli_fetch_assoc($result))
         {
+            $_SESSION['User'] = $_POST['UserName'];
             $db_password = $row['password'];
-           // echo"$db_password";
+            // echo"$db_password";
             if($Pass == $db_password)
             {
                 header("location:admin.php");
