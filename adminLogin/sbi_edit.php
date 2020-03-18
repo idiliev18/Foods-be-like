@@ -5,6 +5,19 @@
     $result = mysqli_query($db_connect,$query);
 
 ?>
+<?php
+session_start();
+
+if(isset($_SESSION['User']))
+{
+    echo '<a href="logout.php?logout">Logout</a>';
+}
+else
+{
+    header("location:login.html");
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">

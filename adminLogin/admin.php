@@ -8,7 +8,7 @@ if(isset($_SESSION['User']))
 }
 else
 {
-    header("location:login.php");
+    header("location:login.html");
 }
 
 ?>
@@ -19,7 +19,7 @@ else
     <meta charset="UTF-8">
 </head>
 <body>
-        <a href="sbi_Upload.html">Upload new recipe</a>
+        <a href="sbi_Upload.php">Upload new recipe</a>
         <a href="sbi_edit.php">View recipes</a>
         <a href="sRecipes.php">View sended recipes</a>    
         <a href="sFeedback.php">View feedback</a>                    
