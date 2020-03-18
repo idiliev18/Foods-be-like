@@ -1,6 +1,6 @@
 <?php 
  
-    require_once("dbConnect.php");
+    require_once("AdbConnect.php");
     $RecipeID = $_GET['GetID'];
     $query = " select * from sbi where id='".$RecipeID."'";
     $result = mysqli_query($db_connect,$query);

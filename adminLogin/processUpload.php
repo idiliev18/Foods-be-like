@@ -1,7 +1,6 @@
 <?php
-include("dbConnect.php");
+include("AdbConnect.php");
 
-include("dbConnect.php");
 $Name=$_REQUEST['Name'];
 $Ingradients=$_REQUEST['Ingradients'];
 $HowToMake=$_REQUEST['HowToMake'];
@@ -16,5 +15,5 @@ mysqli_close($db_connect);
 ?>
 
 <script>
-	window.location.href = "sbi_Upload.php?note=success";
+	window.location.href = "sbi_Upload.html?note=success";
 </script>

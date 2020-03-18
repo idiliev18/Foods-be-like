@@ -1,5 +1,5 @@
 <?php 
-    require_once("dbConnect.php");
+    require_once("AdbConnect.php");
 
     if(isset($_POST['act']) && $_POST['act'] == "Update")
     {

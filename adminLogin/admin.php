@@ -11,6 +11,19 @@ else
     header("location:login.php");
 }
 
-
-
 ?>
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+        <a href="sbi_Upload.html">Upload new recipe</a>
+        <a href="sbi_edit.php">View recipes</a>
+        <a href="sRecipes.php">View sended recipes</a>    
+        <a href="sFeedback.php">View feedback</a>                    
+
+
+</body>
+</html>
