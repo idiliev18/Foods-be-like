@@ -14,7 +14,7 @@ if(isset($_POST['btn-login']))
     }
     else
     {
-        $query = "SELECT * FROM users WHERE username='$UName'";
+        $query = "SELECT * FROM admins WHERE username='$UName'";
         $result =  mysqli_query($db_connect, $query);
         //echo "$query";
       if($row=mysqli_fetch_assoc($result))
