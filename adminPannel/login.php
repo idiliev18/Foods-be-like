@@ -2,32 +2,35 @@
 include ("processLogin.php");
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Admin</title>
-
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="CSS JS Images/adminStyle.css">
 </head>
 <body>
+<div class="login">
+<h1 align="center">Login</h1>
+<form action="" method="post" style="text-align:center;">
+<input type="text" placeholder="Username" id="user" name="UserName"><br/><br/>
+<input type="password" placeholder="Password" id="pass" name="Password"><br/><br/>
+<input type="submit" value="Login" name="btn-login">
 
-
-    <h1>Login</h1>
-        <form action="processLogin.php" method="POST">
-            Username<input type="text" name="UserName"></br>
-            Password <input type="password" name="Password"></br>
-            <input type="submit" value="Login" name="btn-login"></br>
-        </form>
-       <?php
+<?php
+       
        if(isset($_GET['error']) == "blanks")
-       {
-            echo   '<p>Fill the blanks</p> ';
-       }
-       elseif (isset($_GET['error2']) == "blanks") {
-           echo   '<p>Incorrect username or password  </p>';
-       }
-            
+           {
+                 echo   '<center><p class="error">Fill the blanks</p></center> ';
+           }
+       elseif (isset($_GET['error2']) == "blanks") 
+           {
+                 echo   '<center><p class="error2">Incorrect username or password</p></center>';
+           }
 
-       ?>
-      
+?>
+
+<a href="../index.html">Home</a>
+</div>
 </body>
 </html>
