@@ -8,8 +8,15 @@ include ("processLogin.php");
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
+<style>
+      a{
+            color: black;
+      }
+</style>
 </head>
 <body>
+
+
 <div class="login">
 <h1 align="center">Login</h1>
 <form action="" method="post" style="text-align:center;">
@@ -29,8 +36,8 @@ include ("processLogin.php");
            }
 
 ?>
-
 <a href="../index.html">Home</a>
+
 </div>
 </body>
 </html>

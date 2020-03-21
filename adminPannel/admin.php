@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_SESSION['User']))
 {
-    echo "Hello ". $_SESSION['User']. '</br>';
+    //echo "Hello ". $_SESSION['User']. '</br>';
     //echo '<a href="logout.php?logout">Logout</a>';
 }
 else
@@ -17,8 +17,124 @@ else
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
+    <style>
+          a {
+        text-decoration:aqua;
+        color: #fff;
+        display: block;
+            }
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    </style>
 </head>
+<div class="warp">
+        <span class="decor"></span>
+        <nav>
+            <ul class="primary">
+                <li>
+                    <a href="admin.php">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="sbi_upload.php">Upload a Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sbi_edit.php">View Recipes</a>
+                </li>
+
+                <li>
+                    <a href="sRecipes.php">View Sended Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sFeedback.php">View Sended Feedback</a>
+                </li>
+
+                <li style="float: right;">
+                   <a href="logout.php?logout">Logout</a> 
+                </li>
+                
+                   
+                
+
+            </ul>
+        </nav>
+    </div>
+
+<div class="hello"><center>
+<?php echo "Hello ". $_SESSION['User']."!". '</br>';?>
+</div></center>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <body>
+
+<div class="warp">
+        <span class="decor"></span>
+        <nav>
+            <ul class="primary">
+                <li>
+                    <a href="#" data-lang="nav-home" ></a>
+                </li>
+
+                <li>
+                    <a href="#" data-lang="nav-recipe" ></a>
+                </li>
+
+                <li>
+                    <a href="#" data-lang="nav-feedback" ></a>
+                </li>
+
+                <li style="float: right;">
+                    <a href="#" data-lang="nav-mission" ></a>
+                </li>
+
+              <a href="adminPannel/login.php">Admin</a>
+                
+                   
+                
+
+            </ul>
+        </nav>
+    </div>
+
+
 <ul>
        <li><a href="sbi_Upload.php">Upload new recipe</a></li>
        <li><a href="sbi_edit.php">View recipes</a></li>
@@ -28,4 +144,4 @@ else
 </ul>
 
 </body>
-</html>
+-->

@@ -6,7 +6,6 @@ body{
 .login{
     width:360px;
     margin:50px auto;
-    font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
     border-radius:10px;
     border:2px solid #ccc;
     padding:10px 40px 25px;
@@ -19,7 +18,6 @@ body{
     border:1px solid #ccc;
     padding-left:5px;
     font-size:16px;
-    font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; 
     }
     input[type=submit]{
     width:100%;
@@ -31,4 +29,88 @@ body{
     cursor:pointer;
     border-radius:5px;
     margin-bottom:15px; 
+    }
+
+
+    .wrap {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .decor {
+        background: #6EAF8D;
+        background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: linear-gradient(left, white 50%, #6EAF8D 50%);
+        background-size: 50px 25%;
+        ;
+        padding: 2px;
+        display: block;
+    }
+    
+  
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        float: left;
+    }
+    /* clear'n floats */
+    
+    ul:after {
+        clear: both;
+    }
+    
+    ul:before,
+    ul:after {
+        content: " ";
+        display: table;
+    }
+    
+    nav {
+        position: relative;
+        background-image: -webkit-linear-gradient(bottom, rgb(19, 140, 170) 7%, rgb(90, 223, 212) 100%);
+        text-align: center;
+        letter-spacing: 1px;
+        font-size:18px;
+        opacity: 0.9;
+    }
+  
+
+    
+    ul.primary li a {
+        display: block;
+        padding: 20px 30px;
+    }
+    
+    ul.primary li:last-child a {
+        border-right: none;
+    }
+    
+    ul.primary li a:hover {
+        color: #000;
+    }
+    
+    ul.primary li:hover a {
+        background: #fff;
+        color: #666;
+        text-shadow: none;
+    }
+    
+    ul.primary li:hover>a {
+        color: #000;
+    }
+    .hello
+    {
+        margin-top:3%;
+        font-size:40px;
+
+    }
+
+    ::placeholder
+    {
+        font-family: "Segoe UI Light";
     }
