@@ -2,7 +2,7 @@
 
 session_start();    
 include("AdbConnect.php");
-$error;
+$error='';
 
 if(isset($_POST['btn-login']))
 {
@@ -11,7 +11,7 @@ if(isset($_POST['btn-login']))
     //echo"$Pass";
     if(empty($UName) || empty($Pass))
     {
-       header("location:login.html?Error=Fill the blanks!");
+      $error="Fill the blanks!";
        
         
     }
