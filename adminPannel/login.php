@@ -6,8 +6,10 @@ include ("processLogin.php");
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
+
 </head>
 <body>
+
 
     <h1>Login</h1>
         <form action="processLogin.php" method="POST">
@@ -15,6 +17,17 @@ include ("processLogin.php");
             Password <input type="password" name="Password"></br>
             <input type="submit" value="Login" name="btn-login"></br>
         </form>
-        <span><?php echo $error; ?></span>
+       <?php
+       if(isset($_GET['error']) == "blanks")
+       {
+            echo   '<p>Fill the blanks</p> ';
+       }
+       elseif (isset($_GET['error2']) == "blanks") {
+           echo   '<p>Incorrect username or password  </p>';
+       }
+            
+
+       ?>
+      
 </body>
 </html>

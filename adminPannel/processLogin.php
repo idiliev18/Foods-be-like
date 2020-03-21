@@ -11,7 +11,7 @@ if(isset($_POST['btn-login']))
     //echo"$Pass";
     if(empty($UName) || empty($Pass))
     {
-     echo "Fill the blanks!";
+     header("location:login.php?error=blanks");  
        
         
     }
@@ -31,13 +31,13 @@ if(isset($_POST['btn-login']))
             }
             else
             {
-               echo "Incorrect username or password";
+                header("location:login.php?error2=inc");  
 
             }
         }
         else
         {
-           echo "Incorrect username or password";
+            header("location:login.php?error2=inc");  
         }
         
     }
