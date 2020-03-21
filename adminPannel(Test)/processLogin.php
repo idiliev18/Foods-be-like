@@ -2,6 +2,7 @@
 
 session_start();    
 include("AdbConnect.php");
+$error;
 
 if(isset($_POST['btn-login']))
 {
@@ -10,7 +11,9 @@ if(isset($_POST['btn-login']))
     //echo"$Pass";
     if(empty($UName) || empty($Pass))
     {
-        echo "Fill the blanks!";
+       header("location:login.html?Error=Fill the blanks!");
+       
+        
     }
     else
     {
@@ -28,12 +31,13 @@ if(isset($_POST['btn-login']))
             }
             else
             {
-               echo "Incorrect Password";
+               echo "Incorrect username or password";
+
             }
         }
         else
         {
-           echo "Please check the query";
+           echo "Incorrect username or password";
         }
         
     }
