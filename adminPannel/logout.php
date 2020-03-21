@@ -2,7 +2,7 @@
 session_start();
 if(isset($_GET['logout'])){
     session_destroy();
-    header("location:login.html");
+    header("location:login.php");
 }
 
 ?>

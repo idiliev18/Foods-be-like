@@ -14,7 +14,7 @@ if(isset($_SESSION['User']))
 }
 else
 {
-    header("location:login.html");
+    header("location:login.php");
 }
 
 ?>

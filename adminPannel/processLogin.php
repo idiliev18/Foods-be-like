@@ -11,7 +11,7 @@ if(isset($_POST['btn-login']))
     //echo"$Pass";
     if(empty($UName) || empty($Pass))
     {
-      $error="Fill the blanks!";
+     echo "Fill the blanks!";
        
         
     }
