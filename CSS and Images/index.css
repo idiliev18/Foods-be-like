@@ -21,6 +21,8 @@
     ::placeholder
     {
         font-size: 15px;
+        font-family: "Segoe UI Light";
+
     }
     .wrap {
         display: inline-block;
@@ -257,4 +259,6 @@
             height: 40px;
             
     }
+
+
    
