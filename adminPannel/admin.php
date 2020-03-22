@@ -71,6 +71,7 @@ else
 <?php echo "Hello ". $_SESSION['User']."!". '</br>';?>
 </div></center>
  
+<h1>Statistics coming soon</h1>
 </body>
 </html>
 
