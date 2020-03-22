@@ -8,11 +8,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['User']))
-{
-    echo '<a href="logout.php?logout">Logout</a>';
-}
-else
+if(!isset($_SESSION['User']))
 {
     header("location:login.php");
 }
@@ -20,14 +16,57 @@ else
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <title>View Records</title>
+    <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
+    <style>
+ 
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+</style>
 </head>
 <body>
+<div class="navlinks">
+<div class="warp">
+        <span class="decor"></span>
+        <nav>
+            <ul class="primary">
+                <li>
+                    <a href="admin.php">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="sbi_upload.php">Upload a Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sbi_edit.php">View Recipes</a>
+                </li>
+
+                <li>
+                    <a href="sRecipes.php">View Sended Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sFeedback.php">View Sended Feedback</a>
+                </li>
+
+                <li style="float: right;">
+                  <?php echo '<a href="logout.php?logout">Logout</a>';?>
+                </li>
+                
+                   
+                
+
+            </ul>
+        </nav>
+    </div>
+</div>
 
                         <table>
                             <tr>
@@ -60,7 +99,7 @@ else
                                         <td><?php echo $ttm ?></td>
                                         <td><?php echo $ub ?></td>
                                         <td><a href="edit.php?GetID=<?php echo $RecipeID ?>">Edit</a></td>
-                                        <td><a href="sbi_edit.php?delete=<?php echo $RecipeID ?>">Delete</a></td>
+                                        <td><a href="sbi_edit.php?delete=<?php echo $RecipeID ?>" onclick="return confirm('Are you sure') ">Delete</a></td>
                                     </tr>   
                                     <?php
                                     if(isset($_GET['delete']))

@@ -103,6 +103,11 @@ body{
     ul.primary li:hover>a {
         color: #000;
     }
+             .navlinks a {
+        text-decoration:aqua;
+        color: #fff;
+        display: block;
+            }
     .hello
     {
         margin-top:3%;

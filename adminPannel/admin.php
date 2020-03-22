@@ -1,12 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['User']))
-{
-    //echo "Hello ". $_SESSION['User']. '</br>';
-    //echo '<a href="logout.php?logout">Logout</a>';
-}
-else
+if(!isset($_SESSION['User']))
 {
     header("location:login.php");
 }
@@ -19,11 +14,7 @@ else
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
     <style>
-          a {
-        text-decoration:aqua;
-        color: #fff;
-        display: block;
-            }
+ 
             * {
         margin: 0;
         padding: 0;
@@ -32,6 +23,7 @@ else
 
     </style>
 </head>
+<div class="navlinks">
 <div class="warp">
         <span class="decor"></span>
         <nav>
@@ -66,7 +58,7 @@ else
             </ul>
         </nav>
     </div>
-
+</div>
 <div class="hello"><center>
 <?php echo "Hello ". $_SESSION['User']."!". '</br>';?>
 </div></center>

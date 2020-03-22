@@ -10,7 +10,7 @@ session_start();
 
 if(isset($_SESSION['User']))
 {
-    echo '<a href="logout.php?logout">Logout</a>';
+    
 }
 else
 {
@@ -20,11 +20,57 @@ else
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
+    <style>
+ 
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+</style>
 </head>
 <body>
+<div class="navlinks">
+<div class="warp">
+        <span class="decor"></span>
+        <nav>
+            <ul class="primary">
+                <li>
+                    <a href="admin.php">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="sbi_upload.php">Upload a Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sbi_edit.php">View Recipes</a>
+                </li>
+
+                <li>
+                    <a href="sRecipes.php">View Sended Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sFeedback.php">View Sended Feedback</a>
+                </li>
+
+                <li style="float: right;">
+                  <?php echo '<a href="logout.php?logout">Logout</a>';?>
+                </li>
+                
+                   
+                
+
+            </ul>
+        </nav>
+    </div>
+</div>
 
                         <table >
                             <tr>

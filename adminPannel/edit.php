@@ -20,28 +20,67 @@
 <?php
 session_start();
 
-if(isset($_SESSION['User']))
+if(!isset($_SESSION['User']))
 {
-    echo "Hello ". $_SESSION['User']. '</br>';
-    echo '<a href="logout.php?logout">Logout</a>';
-}
-else
-{
+
     header("location:login.html");
 }
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="CSS JS Images/adminStyle.css">
+    <style>
+ 
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+</style>
 
 </head>
 <body>
+<div class="navlinks">
+<div class="warp">
+        <span class="decor"></span>
+        <nav>
+            <ul class="primary">
+                <li>
+                    <a href="admin.php">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="sbi_upload.php">Upload a Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sbi_edit.php">View Recipes</a>
+                </li>
+
+                <li>
+                    <a href="sRecipes.php">View Sended Recipe</a>
+                </li>
+
+                <li>
+                    <a href="sFeedback.php">View Sended Feedback</a>
+                </li>
+
+                <li style="float: right;">
+                  <?php echo '<a href="logout.php?logout">Logout</a>';?>
+                </li>
+                
+                   
+                
+
+            </ul>
+        </nav>
+    </div>
+</div>
 
             <form action="update.php" method="POST">
                 <input type="hidden" name="id" value="<?php echo $RecipeID ?>">
