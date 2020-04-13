@@ -9,10 +9,9 @@ if (!isset($_SESSION['User'])) {
 
 require_once("AdbConnect.php");
 
-if(isset($_POST['act']) && $_POST["act"] == "delete")
-{
-    $delete_id= $_POST["recordId"];
-    mysqli_query($db_connect,"DELETE FROM feedback WHERE id='$delete_id'");
+if (isset($_POST['act']) && $_POST["act"] == "delete") {
+    $delete_id = $_POST["recordId"];
+    mysqli_query($db_connect, "DELETE FROM feedback WHERE id='$delete_id'");
 };
 
 $query = " select * from feedback ";
@@ -36,16 +35,7 @@ $result = mysqli_query($db_connect, $query);
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        function deleteRecord(id){
-            if (confirm("Are you sure you want to delete record with id " + id)){
-                $("input[name=recordId]").val(id);                
-                $("form#deleteForm").submit();                
-            }
-
-            return false;
-        }
-    </script>
+    <script src="../JavaScript/site.js"></script>
 </head>
 
 <body>
@@ -67,11 +57,7 @@ $result = mysqli_query($db_connect, $query);
                     </li>
 
                     <li>
-                        <a href="sRecipes.php">View Sended Recipe</a>
-                    </li>
-
-                    <li>
-                        <a href="sFeedback.php">View Sended Feedback</a>
+                        <a href="sFeedback.php">View Feedback</a>
                     </li>
 
                     <li style="float: right;">
@@ -85,10 +71,10 @@ $result = mysqli_query($db_connect, $query);
             </nav>
         </div>
     </div>
-        <form id="deleteForm" method="POST">
-            <input type="hidden" name="recordId">
-            <input type="hidden" name="act" value="delete">
-        </form>
+    <form id="deleteForm" method="POST">
+        <input type="hidden" name="recordId">
+        <input type="hidden" name="act" value="delete">
+    </form>
     <table>
         <tr>
             <td> ID </td>

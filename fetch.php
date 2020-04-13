@@ -1,5 +1,6 @@
 <?php
 include("dbConnect.php");
+
 if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string($db_connect, $_POST["query"]);

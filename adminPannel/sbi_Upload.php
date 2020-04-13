@@ -47,11 +47,7 @@ box-sizing: border-box;
                 </li>
 
                 <li>
-                    <a href="sRecipes.php">View Sended Recipe</a>
-                </li>
-
-                <li>
-                    <a href="sFeedback.php">View Sended Feedback</a>
+                    <a href="sFeedback.php">View Feedback</a>
                 </li>
 
                 <li style="float: right;">

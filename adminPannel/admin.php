@@ -40,12 +40,9 @@ if(!isset($_SESSION['User']))
                     <a href="sbi_edit.php">View Recipes</a>
                 </li>
 
-                <li>
-                    <a href="sRecipes.php">View Sended Recipe</a>
-                </li>
 
                 <li>
-                    <a href="sFeedback.php">View Sended Feedback</a>
+                    <a href="sFeedback.php">View Feedback</a>
                 </li>
 
                 <li style="float: right;">

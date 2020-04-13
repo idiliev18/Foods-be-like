@@ -7,3 +7,11 @@ $(document).ready(function() { // run when the whole site is loaded
     });
 
 });
+function deleteRecord(id){
+    if (confirm("Are you sure you want to delete record with id " + id)){
+        $("input[name=recordId]").val(id);                
+        $("form#deleteForm").submit();                
+    }
+
+    return false;
+}
