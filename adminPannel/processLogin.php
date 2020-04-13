@@ -1,7 +1,7 @@
 <?php
 
 session_start();    
-include("AdbConnect.php");
+include("../dbConnect.php");
 $error='';
 
 if(isset($_POST['btn-login']))
@@ -22,7 +22,7 @@ if(isset($_POST['btn-login']))
         //echo "$query";
       if($row=mysqli_fetch_assoc($result))
         {
-            $_SESSION['User'] = $_POST['UserName'];
+            $_SESSION['User'] = $row['username'];
             $db_password = $row['password'];
             // echo"$db_password";
             if($Pass == $db_password)
