@@ -152,7 +152,7 @@ body{
                
               }
               
-              .feedback-table td, .recipe_table th {
+              .feedback-table td, .feedback-table th {
                 border: 1px solid #ddd;
                 padding: 8px;
               }

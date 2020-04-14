@@ -69,13 +69,13 @@ var textTranslation={
                 <form action="feedbackpro.php" method="POST" >
         
                   <label for="fname" data-lang="feedback-fname">First Name</label>
-                  <input type="text" id="fname" name="fname" placeholder="Your name..." required>
+                  <input type="text" id="fname" name="fname" required>
               
                   <label for="lname" data-lang="feedback-lname">Last Name</label>
-                  <input type="text" id="lname" name="lname" placeholder="Your last name..." required>
+                  <input type="text" id="lname" name="lname" required>
               
                   <label for="fname" data-lang="feedback-email">Your E-mail</label>
-                  <input type="email" id="E-mail" name="email" placeholder="Your E-mail..." required>
+                  <input type="email" id="E-mail" name="email" required>
         
                   <label for="country" data-lang="feedback-country">Country</label>
                   <select id="country" name="country">
@@ -105,7 +105,7 @@ var textTranslation={
                   </select>
               
                   <label for="subject" data-lang="feedback-message">Message</label>
-                  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+                  <textarea id="subject" name="subject" style="height:200px" required></textarea>
               
                   <input type="submit" data-lang="feedback-submit" value="Submit">
                 </form>
@@ -118,13 +118,13 @@ var textTranslation={
                 <form action="feedbackpro.php" method="POST" >
         
                   <label for="fname" data-lang="feedback-fname">Име </label>
-                  <input type="text" id="fname" name="fname" placeholder="Въведете вашето име..." required>
+                  <input type="text" id="fname" name="fname" required>
               
                   <label for="lname" data-lang="feedback-lname">Фамилия</label>
-                  <input type="text" id="lname" name="lname" placeholder="Въведете вашата фамилия..." required>
+                  <input type="text" id="lname" name="lname" required>
               
                   <label for="fname" data-lang="feedback-email">Електронна поща</label>
-                  <input type="email" id="E-mail" name="email" placeholder="Въведете ел. поща..." required>
+                  <input type="email" id="E-mail" name="email"  required>
         
                   <label for="country" data-lang="feedback-country">Държава</label>
                   <select id="country" name="country">
@@ -154,7 +154,7 @@ var textTranslation={
                   </select>
               
                   <label for="subject" data-lang="feedback-message">Отзив</label>
-                  <textarea id="subject" name="subject" placeholder="Напишете вашия отзив..." style="height:200px" required></textarea>
+                  <textarea id="subject" name="subject"  style="height:200px" required></textarea>
               
                   <input type="submit" data-lang="feedback-submit" value="Изпратете">
                 </form>

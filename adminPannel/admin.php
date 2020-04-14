@@ -59,9 +59,7 @@ if(!isset($_SESSION['User']))
 <div class="hello"><center>
 <?php echo "Hello ". $_SESSION['User']."!". '</br>';?>
 </div></center>
- 
-<h1>Statistics coming soon</h1>
-<a href="statictics.php">dsd</a>
+</br><center><h1>Statistics are coming soon!</h1></center>
 </body>
 </html>
 

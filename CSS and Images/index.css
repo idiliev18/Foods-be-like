@@ -11,12 +11,13 @@
     }
     
     body {
-      /*  background-image: url("Images/background.jpg");*/
+        background-image: url("Images/background.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         font-family: "Segoe UI Light";
         font-size: 13px;
+        font-weight:bold;
     }
     ::placeholder
     {
@@ -259,6 +260,10 @@
             height: 40px;
             
     }
-
+.admin
+{
+ margin-left:1%;
+ margin-right:10%;   
+}
 
    
