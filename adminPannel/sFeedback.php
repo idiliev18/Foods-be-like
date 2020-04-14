@@ -83,6 +83,7 @@ $result = mysqli_query($db_connect, $query);
             <th> Email </th>
             <th> Country </th>
             <th> Message </th>
+            <th> IP </th>
             <th> Delete </th>
 
 
@@ -97,6 +98,7 @@ $result = mysqli_query($db_connect, $query);
             $Email = $row['email'];
             $Country = $row['country'];
             $msg = $row['subject'];
+            $ip = $row['ip'];
         ?>
             <tr>
                 <td><?php echo $UserID ?></td>
@@ -105,6 +107,7 @@ $result = mysqli_query($db_connect, $query);
                 <td><?php echo $Email ?></td>
                 <td><?php echo $Country ?></td>
                 <td><?php echo $msg ?></td>
+                <td><a href="https://dnschecker.org/ip-location.php?ip=<?php echo $ip ?>"><?php echo $ip ?></a></td>
                 <td><a href="sFeedback.php?delete=<?php echo $UserID ?>" onclick="return deleteRecord(<?php echo $UserID ?>)">Delete</a></td>
             </tr>
 
