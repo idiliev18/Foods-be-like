@@ -1,26 +1,34 @@
 <?php
 include("dbConnect.php");
 
+
+
 if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string($db_connect, $_POST["query"]);
 	$query = "
-	SELECT * FROM sbi
-	WHERE Name LIKE '%".$search."%'
+	SELECT * FROM sbi WHERE isAproved = 1
+	AND (Name LIKE '%".$search."%'
 	OR Ingradients LIKE '%".$search."%' 
 	OR HowToMake LIKE '%".$search."%' 
 	OR TimeToMake LIKE '%".$search."%' 
-	OR UploadedBy LIKE '%".$search."%'
+	OR UploadedBy LIKE '%".$search."%')
 	";
 }
 else
 {
-	$query = "SELECT * FROM sbi ORDER BY Ingradients";
+	$query = "SELECT * FROM sbi ORDER BY Ingradients AND WHERE isAproved = 1";
 }
 //echo($query);
 $result = mysqli_query($db_connect, $query);
+
+/*$row = mysqli_fetch_array($result);
+$isAproved = $row['isAproved'];
+echo $isAproved;*/
+
 if(mysqli_num_rows($result) > 0)
 {
+	
 	$output = '<div class="table-responsive">
 					<table class="table table bordered">
 						<tr>

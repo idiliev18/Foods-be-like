@@ -14,6 +14,11 @@ if (isset($_POST['act']) && $_POST["act"] == "delete") {
     mysqli_query($db_connect, "DELETE FROM sbi WHERE id='$delete_id'");
 };
 
+if (isset($_POST['act']) && $_POST["act"] == "approve") {
+    $update_id = $_POST["recordId"];
+    mysqli_query($db_connect, "UPDATE sbi SET isAproved = 1 WHERE id='$update_id'");
+};
+
 $query = " select * from sbi ";
 $result = mysqli_query($db_connect, $query);
 
@@ -76,16 +81,22 @@ $result = mysqli_query($db_connect, $query);
         <input type="hidden" name="act" value="delete">
     </form>
 
-    <table>
+    <form id="approveForm" method="POST">
+        <input type="hidden" name="recordId">
+        <input type="hidden" name="act" value="approve">
+    </form>
+
+    <table class="recipe_table">
         <tr>
-            <td> Recipe ID </td>
-            <td> Recipe Name </td>
-            <td> Products </td>
-            <td> How To Make </td>
-            <td> Time To Make </td>
-            <td> Uploaded By </td>
-            <td> Edit </td>
-            <td> Delete </td>
+            <th> ID </th>
+            <th> Recipe Name </th>
+            <th> Products </th>
+            <th> How To Make </th>
+            <th> Time To Make </th>
+            <th> Uploaded By </th>
+            <th> Approve </th>
+            <th> Edit </th>
+            <th> Delete </th>
         </tr>
 
         <?php
@@ -105,8 +116,20 @@ $result = mysqli_query($db_connect, $query);
                 <td><?php echo $htm ?></td>
                 <td><?php echo $ttm ?></td>
                 <td><?php echo $ub ?></td>
+                <td>
+                <?php 
+                    if($row['isAproved'] == 0)
+                    {
+                        ?>
+                        <a href="#" onclick="return approveRecord(<?php echo $RecipeID ?>)">Approve
+                        <?php
+                    }else{
+                        echo "Aproved";
+                    }
+                ?>
+                </td>
                 <td><a href="edit.php?GetID=<?php echo $RecipeID ?>">Edit</a></td>
-                <td><a href="sFeedback.php?delete=<?php echo $RecipeID ?>" onclick="return deleteRecord(<?php echo $RecipeID ?>)">Delete</a></td>
+                <td><a href="#" onclick="return deleteRecord(<?php echo $RecipeID ?>)">Delete</a></td>
             </tr>
         <?php
         }

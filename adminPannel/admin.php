@@ -61,6 +61,7 @@ if(!isset($_SESSION['User']))
 </div></center>
  
 <h1>Statistics coming soon</h1>
+<a href="statictics.php">dsd</a>
 </body>
 </html>
 

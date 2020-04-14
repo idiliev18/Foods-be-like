@@ -75,15 +75,15 @@ $result = mysqli_query($db_connect, $query);
         <input type="hidden" name="recordId">
         <input type="hidden" name="act" value="delete">
     </form>
-    <table>
+    <table class="feedback-table">
         <tr>
-            <td> ID </td>
-            <td> Name </td>
-            <td> Last Name </td>
-            <td> Email </td>
-            <td> Country </td>
-            <td> Message </td>
-            <td> Delete </td>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Last Name </th>
+            <th> Email </th>
+            <th> Country </th>
+            <th> Message </th>
+            <th> Delete </th>
 
 
         </tr>

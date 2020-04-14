@@ -15,3 +15,12 @@ function deleteRecord(id){
 
     return false;
 }
+
+function approveRecord(id){
+    if (confirm("Are you sure, you want to approve recipe with id " + id)){
+        $("input[name=recordId]").val(id);                
+        $("form#approveForm").submit();                
+    }
+
+    return false;
+}
