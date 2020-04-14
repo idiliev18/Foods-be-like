@@ -118,7 +118,7 @@ $result = mysqli_query($db_connect, $query);
                 <td><?php echo $ttm ?></td>
                 <td>
                     <?php echo $ub ?></br>
-                    <a href="https://dnschecker.org/ip-location.php?ip=<?php echo $ip ?>"><?php echo $ip ?></a>
+                    <a target="_BLANK" href="https://dnschecker.org/ip-location.php?ip=<?php echo $ip ?>"><?php echo $ip ?></a>
                 </td>
                 <td>
                 <?php 
