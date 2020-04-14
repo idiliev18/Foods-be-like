@@ -1,13 +1,13 @@
 <!-- Don't touch-->
 <?php
 include("dbConnect.php");
-$name=$_REQUEST['name'];
-$email=$_REQUEST['email'];
-$rname=$_REQUEST['rname'];
-$Ingradients=$_REQUEST['Ingradients'];
-$HowToMake=$_REQUEST['HowToMake'];
+$name = $_REQUEST['name'];
+$ingredients = $_REQUEST['ingredients'];
+$htm = $_REQUEST['htm'];
+$ttm = $_REQUEST['ttm'];
+$uploadedBy = $_REQUEST['uploadedBy'];
 
-$query=mysqli_query($db_connect,"INSERT INTO recipe (name, email, rname, Ingradients, HowToMake) VALUES ('$name','$email','$rname', '$Ingradients', '$HowToMake')") or die(mysqli_error($db_connect));
+$query = mysqli_query($db_connect, "INSERT INTO sbi (Name, Ingradients, HowToMake, TimeToMake, UploadedBy) VALUES ('$name','$ingredients','$htm', '$ttm', '$uploadedBy')") or die(mysqli_error($db_connect));
 
 mysqli_close($db_connect);
 //header("location:recipe.php?note=success");
@@ -16,4 +16,3 @@ mysqli_close($db_connect);
 <script>
 	window.location.href = "recipe.html?note=success";
 </script>
-

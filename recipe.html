@@ -1,4 +1,3 @@
-<!-- Don't touch-->
 <?php
 
 include("dbConnect.php");
@@ -44,12 +43,33 @@ include("dbConnect.php");
     <button class="translate-button translate-bg" data-lng="bg"></button> 
     <button class="translate-button translate-en" data-lng="en"></button>
 
-    <!-- <div class="bg"></div>
+    <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-  -->
+ 
 
-      <div data-lang="send_recipe"></div>
+  <div class="container">
+    <form action="process.php"method="POST">
+      <label for="fname" data-lang="uploadedBy">Your Name</label>
+      <input type="text" id="Your Name" name="uploadedBy"  required>
+
+      <label for="fname" data-lang="recipe-name" >Recipe Name</label>
+      <input type="text" id="Your E-mail" name="name" required>
+
+      <label for="fname" data-lang="ingredients">Ingredients</label>
+      <input type="text" id="Name of the recepe" name="ingredients" required>
+  
+      <label for="lname" data-lang="ttm">Time to make</label>
+      <input type="text" id="Products" name="ttm"required>
+  
+      <label for="subject" data-lang="htm">How To Make</label>
+      <textarea id="subject" name="htm"  style="height:200px" required></textarea>
+  
+      <input data-lang="recipe-submit" type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+      
       
 </body>
 

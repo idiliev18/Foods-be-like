@@ -27,33 +27,39 @@ var textTranslation={
 
      
 
-        "recipe-yname":{
-            'en': `Your name`,
-
-            'bg': `Вашето име`
-        },
-
-        "recipe-email":{
-            'en': `Your e-mail`,
-
-            'bg': `Вашата ел. поща`
-        },
-        "recipe-rname":{
+        "recipe-name":{
             'en': `Recipe Name`,
 
             'bg': `Име на рецептата`
         },
 
-        "recipe-products":{
-            'en': `Products`,
+        "ingredients":{
+            'en': `Ingredients`,
 
-            'bg': `Продукти`
+            'bg': `Съставки`
         },
-
-        "recipe-prepare":{
-            'en': `How to Make`,
+        "htm":{
+            'en': `How To Make`,
 
             'bg': `Начин на приготвяне`
+        },
+
+        "ttm":{
+            'en': `Time To Make`,
+
+            'bg': `Време за приготвяне`
+        },
+
+        "uploadedBy":{
+            'en': `Your Name`,
+
+            'bg': `Вашето име`
+        },
+
+        "recipe-submit":{
+            'en': `Submit`,
+
+            'bg': `Изпратете`
         },
 
 
@@ -63,17 +69,17 @@ var textTranslation={
                 <form action="feedbackpro.php" method="POST" >
         
                   <label for="fname" data-lang="feedback-fname">First Name</label>
-                  <input type="text" id="fname" name="fname" placeholder="Your name..." required>
+                  <input type="text" id="fname" name="fname" required>
               
                   <label for="lname" data-lang="feedback-lname">Last Name</label>
-                  <input type="text" id="lname" name="lname" placeholder="Your last name..." required>
+                  <input type="text" id="lname" name="lname" required>
               
                   <label for="fname" data-lang="feedback-email">Your E-mail</label>
-                  <input type="email" id="E-mail" name="email" placeholder="Your E-mail..." required>
+                  <input type="email" id="E-mail" name="email" required>
         
                   <label for="country" data-lang="feedback-country">Country</label>
                   <select id="country" name="country">
-                    <option value="0"  data-lang="country-0" >Choose Country</option>
+                    <option value="1000"  data-lang="country-0" >Choose Country</option>
                     <option value="0"  data-lang="country-0" >Bulgaria</option>
                     <option value="1"  data-lang="country-1">The UK</option>
                     <option value="2"  data-lang="country-2">The USA</option>
@@ -99,7 +105,7 @@ var textTranslation={
                   </select>
               
                   <label for="subject" data-lang="feedback-message">Message</label>
-                  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+                  <textarea id="subject" name="subject" style="height:200px" required></textarea>
               
                   <input type="submit" data-lang="feedback-submit" value="Submit">
                 </form>
@@ -112,13 +118,13 @@ var textTranslation={
                 <form action="feedbackpro.php" method="POST" >
         
                   <label for="fname" data-lang="feedback-fname">Име </label>
-                  <input type="text" id="fname" name="fname" placeholder="Въведете вашето име..." required>
+                  <input type="text" id="fname" name="fname" required>
               
                   <label for="lname" data-lang="feedback-lname">Фамилия</label>
-                  <input type="text" id="lname" name="lname" placeholder="Въведете вашата фамилия..." required>
+                  <input type="text" id="lname" name="lname" required>
               
                   <label for="fname" data-lang="feedback-email">Електронна поща</label>
-                  <input type="email" id="E-mail" name="email" placeholder="Въведете ел. поща..." required>
+                  <input type="email" id="E-mail" name="email"  required>
         
                   <label for="country" data-lang="feedback-country">Държава</label>
                   <select id="country" name="country">
@@ -148,77 +154,13 @@ var textTranslation={
                   </select>
               
                   <label for="subject" data-lang="feedback-message">Отзив</label>
-                  <textarea id="subject" name="subject" placeholder="Напишете вашия отзив..." style="height:200px" required></textarea>
+                  <textarea id="subject" name="subject"  style="height:200px" required></textarea>
               
                   <input type="submit" data-lang="feedback-submit" value="Изпратете">
                 </form>
               </div>
             </div>
          `
-        },
-
-        "send_recipe":{
-            'en': `<div data-lang="send_recipe">
-            <div class="container">
-              <form action="process.php"method="POST">
-                <label for="fname" data-lang="recipe-yname">Your Name</label>
-                <input type="text" id="Your Name" name="name" placeholder="Your Name..." required>
-    
-                <label for="fname" data-lang="recipe-email" >Your E-mail</label>
-                <input type="email" id="Your E-mail" name="email" placeholder="Your E-mail..." required>
-    
-                <label for="fname" data-lang="recipe-rname">Name of the recipe</label>
-                <input type="text" id="Name of the recepe" name="rname" placeholder="Name of the recipe..." required>
-            
-                <label for="lname" data-lang="recipe-products">Products</label>
-                <input type="text" id="Products" name="Ingradients" placeholder="Products..." required>
-            
-                <label for="subject" data-lang="recipe-prepare">How to prepare it</label>
-                <textarea id="subject" name="HowToMake" placeholder="How to prepare it..." style="height:200px" required></textarea>
-            
-                <input type="submit" value="Submit">
-              </form>
-            </div>
-          </div> `,
-
-            'bg': `<div data-lang="send_recipe">
-            <div class="container">
-              <form action="process.php"method="POST">
-                <label for="fname" data-lang="recipe-yname"> Вашето име</label>
-                <input type="text" id="Your Name" name="name" placeholder="Въведете вашето име..." required>
-    
-                <label for="fname" data-lang="recipe-email" >Вашата електронна поща</label>
-                <input type="email" id="Your E-mail" name="email" placeholder="Въведете вашата ел.поща..." required>
-    
-                <label for="fname" data-lang="recipe-rname">Име на рецептата</label>
-                <input type="text" id="Name of the recepe" name="rname" placeholder="Въведете име на рецептата" required>
-            
-                <label for="lname" data-lang="recipe-products">Продукти</label>
-                <input type="text" id="Products" name="Ingradients" placeholder="Въведете продуктите..." required>
-            
-                <label for="subject" data-lang="recipe-prepare">Начин на приготвяне</label>
-                <textarea id="subject" name="HowToMake" placeholder="Въведете начин на приготвяне..." style="height:200px" required></textarea>
-            
-                <input type="submit" value="Изпратете">
-              </form>
-            </div>
-          </div> `
-        },
-
-        "Search_field":{
-            'en': `<div  data-lang="Search_field">
-
-            <input type="text" name="search_text" id="search_text" style="height: 70px"  placeholder="What do you have in your fridge?" class="form-control" >
-            <div id="result"></div>
-            <div style="clear:both"></div>
-            </div> `,
-
-            'bg': `<div  data-lang="Search_field">
-
-            <input type="text" name="search_text" id="search_text" style="height: 70px"  placeholder="Какво има във вашия хладилник?" class="form-control" >
-            <div id="result"></div>
-            <div style="clear:both"></div>
-            </div> `
         },
 
         "mission-text":{

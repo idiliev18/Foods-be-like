@@ -15,12 +15,15 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        font-family: helvetica, arial, serif;
+        font-family: "Segoe UI Light";
         font-size: 13px;
+        font-weight:bold;
     }
     ::placeholder
     {
         font-size: 15px;
+        font-family: "Segoe UI Light";
+
     }
     .wrap {
         display: inline-block;
@@ -257,4 +260,10 @@
             height: 40px;
             
     }
+.admin
+{
+ margin-left:1%;
+ margin-right:10%;   
+}
+
    

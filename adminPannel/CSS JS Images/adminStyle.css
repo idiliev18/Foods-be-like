@@ -1,0 +1,204 @@
+body{
+    font-family: "Segoe UI Light";
+}
+
+
+.login{
+    width:360px;
+    margin:50px auto;
+    border-radius:10px;
+    border:2px solid #ccc;
+    padding:10px 40px 25px;
+    margin-top:70px; 
+    }
+    input[type=text], input[type=password]{
+    width:99%;
+    padding:10px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    padding-left:5px;
+    font-size:16px;
+    }
+    input[type=submit]{
+    width:100%;
+    background-color:#009;
+    color:#fff;
+    border:2px solid #06F;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-bottom:15px; 
+    }
+
+
+    .wrap {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .decor {
+        background: #6EAF8D;
+        background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+        background: linear-gradient(left, white 50%, #6EAF8D 50%);
+        background-size: 50px 25%;
+        ;
+        padding: 2px;
+        display: block;
+    }
+    
+  
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        float: left;
+    }
+    /* clear'n floats */
+    
+    ul:after {
+        clear: both;
+    }
+    
+    ul:before,
+    ul:after {
+        content: " ";
+        display: table;
+    }
+    
+    nav {
+        position: relative;
+        background-image: -webkit-linear-gradient(bottom, rgb(19, 140, 170) 7%, rgb(90, 223, 212) 100%);
+        text-align: center;
+        letter-spacing: 1px;
+        font-size:18px;
+        opacity: 0.9;
+    }
+  
+
+    
+    ul.primary li a {
+        display: block;
+        padding: 20px 30px;
+    }
+    
+    ul.primary li:last-child a {
+        border-right: none;
+    }
+    
+    ul.primary li a:hover {
+        color: #000;
+    }
+    
+    ul.primary li:hover a {
+        background: #fff;
+        color: #666;
+        text-shadow: none;
+    }
+    
+    ul.primary li:hover>a {
+        color: #000;
+    }
+             .navlinks a {
+        text-decoration:aqua;
+        color: #fff;
+        display: block;
+            }
+    .hello
+    {
+        margin-top:3%;
+        font-size:40px;
+
+    }
+
+    ::placeholder
+    {
+        font-family: "Segoe UI Light";
+    }
+
+        .recipe_table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            
+           
+          }
+          
+          .recipe_table td, .recipe_table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          .recipe_table tr:nth-child(even){background-color: #f2f2f2;}
+          
+          .recipe_table tr:hover {background-color: #ddd;}
+          
+          .recipe_table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: rgb(20, 161, 185);
+            color: white;}
+
+            .feedback-table {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                
+               
+              }
+              
+              .feedback-table td, .feedback-table th {
+                border: 1px solid #ddd;
+                padding: 8px;
+              }
+              
+              .feedback-table tr:nth-child(even){background-color: #f2f2f2;}
+              
+              .feedback-table tr:hover {background-color: #ddd;}
+              
+              .feedback-table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: rgb(20, 161, 185);
+                color: white;}
+
+                input[type=text],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                
+                input[type=email],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                
+                input[type=submit] {
+                    background-color: #6ed0fd;
+                    color: rgb(0, 0, 0);
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
