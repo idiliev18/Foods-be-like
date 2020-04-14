@@ -25,7 +25,7 @@ if(isset($_POST['btn-login']))
             $_SESSION['User'] = $row['username'];
             $db_password = $row['password'];
             // echo"$db_password";
-            if($Pass == $db_password)
+            if(password_verify($Pass,$db_password) === true)
             {
                 header("location:admin.php");
             }
