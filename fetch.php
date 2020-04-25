@@ -32,11 +32,11 @@ if(mysqli_num_rows($result) > 0)
 	$output = '<div class="table-responsive">
 					<table class="table table bordered">
 						<tr>
-							<th>Name</th>
-							<th>Ingredients</th>
-							<th>How to make</th>
-							<th>Time to make</th>
-							<th>Uploaded by</th>
+							<th>Име на Рецептата</th>
+							<th>Продукти</th>
+							<th>Начин на приготвяне</th>
+							<th>Време за приготвяне</th>
+							<th>Изпратена от</th>
 						</tr>';
 	while($row = mysqli_fetch_array($result))
 	{
