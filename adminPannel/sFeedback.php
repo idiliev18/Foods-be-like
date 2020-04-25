@@ -14,6 +14,11 @@ if (isset($_POST['act']) && $_POST["act"] == "delete") {
     mysqli_query($db_connect, "DELETE FROM feedback WHERE id='$delete_id'");
 };
 
+if (isset($_POST['act']) && $_POST["act"] == "approve") {
+    $update_id = $_POST["recordId"];
+    mysqli_query($db_connect, "UPDATE feedback SET isAproved = 1 WHERE id='$update_id'");
+};
+
 $query = " select * from feedback ";
 $result = mysqli_query($db_connect, $query);
 
@@ -49,10 +54,6 @@ $result = mysqli_query($db_connect, $query);
                     </li>
 
                     <li>
-                        <a href="sbi_upload.php">Upload a Recipe</a>
-                    </li>
-
-                    <li>
                         <a href="sbi_edit.php">View Recipes</a>
                     </li>
 
@@ -75,6 +76,12 @@ $result = mysqli_query($db_connect, $query);
         <input type="hidden" name="recordId">
         <input type="hidden" name="act" value="delete">
     </form>
+
+    <form id="approveForm" method="POST">
+        <input type="hidden" name="recordId">
+        <input type="hidden" name="act" value="approve">
+    </form>
+
     <table class="feedback-table">
         <tr>
             <th> ID </th>
@@ -83,6 +90,8 @@ $result = mysqli_query($db_connect, $query);
             <th> Email </th>
             <th> Country </th>
             <th> Message </th>
+            <th>Mark as read</th>
+            <th> IP </th>
             <th> Delete </th>
 
 
@@ -97,6 +106,7 @@ $result = mysqli_query($db_connect, $query);
             $Email = $row['email'];
             $Country = $row['country'];
             $msg = $row['subject'];
+            $ip = $row['ip'];
         ?>
             <tr>
                 <td><?php echo $UserID ?></td>
@@ -105,6 +115,20 @@ $result = mysqli_query($db_connect, $query);
                 <td><?php echo $Email ?></td>
                 <td><?php echo $Country ?></td>
                 <td><?php echo $msg ?></td>
+                <td>
+                <?php 
+                    if($row['isAproved'] == 0)
+                    {
+                        ?>
+                        <a href="#" onclick="return approveRecord(<?php echo $UserID ?>)">Mark as Read
+                        <?php
+                    }else{
+                        echo "Already Read";
+                    }
+                ?>
+                </td>
+                <td><a target="_BLANK" href="https://dnschecker.org/ip-location.php?ip=<?php echo $ip ?>"><?php echo $ip ?></a></td>
+
                 <td><a href="sFeedback.php?delete=<?php echo $UserID ?>" onclick="return deleteRecord(<?php echo $UserID ?>)">Delete</a></td>
             </tr>
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include ("AdbConnect.php");
 if(!isset($_SESSION['User']))
 {
     header("location:login.php");
@@ -32,9 +32,6 @@ if(!isset($_SESSION['User']))
                     <a href="admin.php">Dashboard</a>
                 </li>
 
-                <li>
-                    <a href="sbi_upload.php">Upload a Recipe</a>
-                </li>
 
                 <li>
                     <a href="sbi_edit.php">View Recipes</a>
@@ -59,78 +56,57 @@ if(!isset($_SESSION['User']))
 <div class="hello"><center>
 <?php echo "Hello ". $_SESSION['User']."!". '</br>';?>
 </div></center>
-</br><center><h1>Statistics are coming soon!</h1></center>
+
+<div class="stats-rfa">
+<div class="digit-rfa">
+<?php
+$sql="SELECT count(id) AS total FROM sbi WHERE isAproved = 0";
+$result = mysqli_query($db_connect,$sql);
+$values = mysqli_fetch_assoc($result);
+$num_rows=$values['total'];
+echo $num_rows;
+?>
+</div>
+<h1>Recipes for Aproving</h1>
+</div>
+
+<div class="stats-ffr">
+<div class="digit-ffr">
+<?php
+$sql="SELECT count(id) AS total FROM feedback WHERE isAproved = 0";
+$result = mysqli_query($db_connect,$sql);
+$values = mysqli_fetch_assoc($result);
+$num_rows=$values['total'];
+echo $num_rows;
+?>
+</div>
+<h1>Feedback for reading</h1>
+</div>
+
+<div class="stats-ar">
+<div class="digit-ar">
+<?php
+$sql="SELECT count(id) AS total FROM sbi";
+$result = mysqli_query($db_connect,$sql);
+$values = mysqli_fetch_assoc($result);
+$num_rows=$values['total'];
+echo $num_rows;
+?>
+</div>
+<h1>All recipes</h1>
+</div>
+
+<div class="stats-af">
+<div class="digit-af">
+<?php
+$sql="SELECT count(id) AS total FROM feedback ";
+$result = mysqli_query($db_connect,$sql);
+$values = mysqli_fetch_assoc($result);
+$num_rows=$values['total'];
+echo $num_rows;
+?>
+</div>
+<h1>All feedback</h1>
+</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<body>
-
-<div class="warp">
-        <span class="decor"></span>
-        <nav>
-            <ul class="primary">
-                <li>
-                    <a href="#" data-lang="nav-home" ></a>
-                </li>
-
-                <li>
-                    <a href="#" data-lang="nav-recipe" ></a>
-                </li>
-
-                <li>
-                    <a href="#" data-lang="nav-feedback" ></a>
-                </li>
-
-                <li style="float: right;">
-                    <a href="#" data-lang="nav-mission" ></a>
-                </li>
-
-              <a href="adminPannel/login.php">Admin</a>
-                
-                   
-                
-
-            </ul>
-        </nav>
-    </div>
-
-
-<ul>
-       <li><a href="sbi_Upload.php">Upload new recipe</a></li>
-       <li><a href="sbi_edit.php">View recipes</a></li>
-       <li><a href="sRecipes.php">View sended recipes</a></li>
-       <li><a href="sFeedback.php">View feedback</a></li>  
-       <li><a href="logout.php?logout">Logout</a> </li>   
-</ul>
-
-</body>
--->

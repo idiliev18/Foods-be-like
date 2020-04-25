@@ -53,11 +53,7 @@ box-sizing: border-box;
                 <li>
                     <a href="admin.php">Dashboard</a>
                 </li>
-
-                <li>
-                    <a href="sbi_upload.php">Upload a Recipe</a>
-                </li>
-
+                
                 <li>
                     <a href="sbi_edit.php">View Recipes</a>
                 </li>

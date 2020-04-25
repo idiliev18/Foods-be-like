@@ -52,9 +52,6 @@ $result = mysqli_query($db_connect, $query);
                         <a href="admin.php">Dashboard</a>
                     </li>
 
-                    <li>
-                        <a href="sbi_upload.php">Upload a Recipe</a>
-                    </li>
 
                     <li>
                         <a href="sbi_edit.php">View Recipes</a>
@@ -94,7 +91,7 @@ $result = mysqli_query($db_connect, $query);
             <th> How To Make </th>
             <th> Time To Make </th>
             <th> Uploaded By </th>
-            <th> Approve </th>
+            <th> Aprove </th>
             <th> Edit </th>
             <th> Delete </th>
         </tr>
@@ -108,6 +105,7 @@ $result = mysqli_query($db_connect, $query);
             $htm = $row['HowToMake'];
             $ttm = $row['TimeToMake'];
             $ub = $row['UploadedBy'];
+            $ip = $row['ip'];
         ?>
             <tr>
                 <td><?php echo $RecipeID ?></td>
@@ -115,7 +113,10 @@ $result = mysqli_query($db_connect, $query);
                 <td><?php echo $Products ?></td>
                 <td><?php echo $htm ?></td>
                 <td><?php echo $ttm ?></td>
-                <td><?php echo $ub ?></td>
+                <td>
+                <?php echo $ub ?></br>
+                <a target="_BLANK" href="https://dnschecker.org/ip-location.php?ip=<?php echo $ip ?>"><?php echo $ip ?></a>
+                </td>
                 <td>
                 <?php 
                     if($row['isAproved'] == 0)
